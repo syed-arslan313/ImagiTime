@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Imagitime</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    .font {
+      font-family: "Poppins", sans-serif;
+    }
+    .font2 {
+      font-family: "Baloo 2", sans-serif;
+    }
+  </style>
+  <body>
+    <!--Header Section Start-->
+
+    <div
+      class="flex flex-row items-center justify-center py-[25px] shadow-[0px_2px_16.8px_#00000040]"
+    >
+      <div
+        class="lg:w-[1189px] lg:px-0 md:w-full md:px-[30px] max-sm:w-full flex justify-between flex-row max-sm:px-[20px]"
+      >
+        <img src="images/logo.png" class="w-[126px] h-[46px]" />
+        <img
+          src="images/menu.png"
+          class="w-[50px] h-[46px] hidden max-sm:block"
+        />
+
+        <ul
+          class="flex flex-row gap-[38px] text-[18px] text-[#363636] font items-center max-sm:hidden"
+        >
+          <li>
+            <a
+              href="/"
+              class="hover:text-[#5C9991] hover:underline hover:underline-offset-[8px]"
+            >
+              Home</a
+            >
+          </li>
+
+          <a
+            href="Books.html"
+            class="hover:text-[#5C9991] hover:underline hover:underline-offset-[8px]"
+            ><li>Books</li></a
+          >
+          <a
+            href="about.html"
+            class="hover:text-[#5C9991] hover:underline hover:underline-offset-[8px]"
+          >
+            <li>About Us</li></a
+          >
+          <a
+            href="/"
+            class="hover:text-[#5C9991] hover:underline hover:underline-offset-[8px]"
+          >
+            <li>Faqs & Contact</li></a
+          >
+        </ul>
+      </div>
+    </div>
+    <!--Header Section End-->
+
+    <!--Hero Section Start-->
+
+    <div
+      class="flex flex-col items-center pt-[130px] pb-[121px] bg-[#EAFBF9] max-sm:px-[15px] relative overflow-hidden"
+    >
+      <img
+        src="images/hel11.png"
+        class="w-[190px] h-[120px] absolute left-0 top-0 rotate-[358deg] block lg:hidden"
+      />
+
+      <img
+        src="images/hel22.png"
+        class="w-[250px] h-[120px] absolute right-0 bottom-0 rotate-[5deg] block lg:hidden"
+      />
+
+      <div class="flex w-full flex-col relative items-center">
+        <img
+          src="images/hel11.png"
+          class="w-[335px] h-[173px] absolute left-0 top-0 rotate-[358deg] lg:block hidden"
+        />
+        <img
+          src="images/hel22.png"
+          class="w-[396px] h-[188px] absolute right-0 bottom-0 rotate-[5deg] lg:block hidden"
+        />
+
+        <div
+          class="flex w-unset max-sm:w-full flex-col rounded-[20px] border-[1px] border-black bg-white py-[49px] max-sm:py-[30px] max-sm:px-[10px] px-[60px]"
+        >
+          <h1
+            class="text-[47px] leading-[60px] text-black font2 max-sm:text-[30px] max-sm:leading-[40px]"
+          >
+            Who Would you like to<br />
+            make the book for?
+          </h1>
+          <p class="text-[16px] leading-[20px] text-black font pt-[20px]">
+            Tell us more about yourself and what you got in mind
+          </p>
+          <p class="text-[16px] leading-[20px] text-black font pt-[20px]">
+            Child’s First Name for Story*
+          </p>
+
+          <input
+            type="Name"
+            value=""
+            class="border-[1px] rounded-[8px] border-black w-[531px] max-sm:w-full h-[52px] mt-[16px] pl-[18px]"
+          />
+
+          <div
+            class="flex flex-row max-sm:flex-col max-sm:gap-[20px] pt-[31px] justify-between"
+          >
+            <div class="flex flex-col gap-[16px]">
+              <p class="text-[16px] leading-[20px] text-black font">
+                Select Current Age
+              </p>
+
+              <select
+                class="flex w-[250px] h-[52px] border-1 border-black rounded-[8px] pl-[18px]"
+              >
+                <option value="technology">18 Years</option>
+                <option value="business">16 Years</option>
+                <option value="health">17 Years</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-[16px]">
+              <p class="text-[16px] leading-[20px] text-black font">
+                Select Birth Month
+              </p>
+
+              <select
+                class="flex w-[250px] h-[52px] border-1 border-black rounded-[8px] pl-[18px]"
+              >
+                <option value="technology">jun</option>
+                <option value="business">feb</option>
+                <option value="health">Mar</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row max-sm:flex-col max-sm:gap-[20px] pt-[31px] justify-between"
+          >
+            <div class="flex flex-col gap-[16px]">
+              <p class="text-[16px] leading-[20px] text-black font">
+                Whats Your Gender?
+              </p>
+
+              <a
+                class="flex flex-col items-center w-[249px] h-[53px] items-center justify-center border-1 border-black rounded-[8px] active:bg-[#5C9991]"
+              >
+                <p class="text-[21px] leading-[26px] text-black font">👦Boy</p>
+              </a>
+            </div>
+
+            <div class="flex flex-col justify-end">
+              <a
+                class="flex flex-col items-center w-[249px] h-[53px] items-center justify-center border-1 border-black rounded-[8px] active:bg-[#5C9991]"
+              >
+                <p
+                  class="text-[21px] leading-[26px] text-black active:text-white-900 font"
+                >
+                  👧Girl
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <a
+            href=""
+            class="flex flex-col items-center justify-center bg-[#FADA7A] h-[52px] rounded-[8px] mt-[31px]"
+          >
+            <p class="text-[18px] leading-[20px] font text-black">
+              Upload Photos
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Hero Section end-->
+
+    <!--About Section Start-->
+
+    <div
+      class="flex flex-col items-center pt-[73px] pb-[98px] max-sm:px-[20px]"
+    >
+      <h1 class="text-[36px] max-sm:text-[25px] text-black font-semibold">
+        What People Say About Us
+      </h1>
+
+      <div
+        class="flex flex-row w-full justify-center gap-[52px] max-sm:gap-[80px] pt-[63px] max-sm:flex-col"
+      >
+        <div
+          class="flex speech-bubble speech-bubble-bg-right lg:flex-row flex-col py-[20px] lg:py-0 lg:w-[567px] md:px-[20px] lg:px-0 lg:h-[224px] lg:gap-[39px] gap-[39px] md:gap-[30px] items-center justify-center !bg-[#EAFBF9] border-1 border-black max-sm:px-[10px]"
+        >
+          <img
+            src="images/test1.png"
+            class="lg:w-[133px] lg:h-[133px] w-[133px] h-[133px] md:w-[100px] md:h-[100px]"
+          />
+
+          <div class="flex flex-col items-center lg:items-start">
+            <img src="images/st2.png" class="w-[130px] h-[22px]" />
+
+            <p
+              class="text-[12px] leading-[136%] pt-[12px] text-[#363636] lg:w-[333px] md:w-[285px] font text-center lg:text-start"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis
+              varius id imperdiet. Iaculis mauris venenatis dignissim nisl
+              pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc
+              facilisis.
+            </p>
+
+            <p
+              class="text-[14px] leading-[136%] pt-[18px] text-[#363636] font font-medium max-sm:text-center"
+            >
+              Karen Smitht
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex speech-bubble speech-bubble-bg-right lg:flex-row flex-col max-sm:py-[20px] lg:w-[567px] md:px-[20px] lg:px-0 lg:h-[224px] lg:gap-[39px] gap-[39px] md:gap-[30px] items-center justify-center border-1 border-black max-sm:px-[10px]"
+        >
+          <img
+            src="images/test2.png"
+            class="lg:w-[133px] lg:h-[133px] w-[133px] h-[133px] md:w-[100px] md:h-[100px]"
+          />
+
+          <div class="flex flex-col items-center lg:items-start">
+            <img src="images/st2.png" class="w-[130px] h-[22px]" />
+
+            <p
+              class="text-[12px] leading-[136%] pt-[12px] text-[#363636] lg:w-[333px] md:w-[285px] font text-center lg:text-startr"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis
+              varius id imperdiet. Iaculis mauris venenatis dignissim nisl
+              pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc
+              facilisis .
+            </p>
+
+            <p
+              class="text-[14px] leading-[136%] pt-[18px] text-[#363636] font font-medium max-sm:text-center"
+            >
+              Karen Smitht
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-row w-full justify-center gap-[52px] max-sm:gap-[80px] pt-[86px] max-sm:flex-col"
+      >
+        <div
+          class="flex speech-bubble speech-bubble-bg-right lg:flex-row flex-col max-sm:py-[20px] lg:w-[567px] md:px-[20px] lg:px-0 lg:h-[224px] lg:gap-[39px] gap-[39px] md:gap-[30px] items-center justify-center border-1 border-black max-sm:px-[10px]"
+        >
+          <img
+            src="images/test3.png"
+            class="lg:w-[133px] lg:h-[133px] w-[133px] h-[133px] md:w-[100px] md:h-[100px]"
+          />
+
+          <div class="flex flex-col items-center lg:items-start">
+            <img src="images/st2.png" class="w-[130px] h-[22px]" />
+
+            <p
+              class="text-[12px] leading-[136%] pt-[12px] text-[#363636] lg:w-[333px] md:w-[285px] font text-center lg:text-startr"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis
+              varius id imperdiet. Iaculis mauris venenatis dignissim nisl
+              pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc
+              facilisis .
+            </p>
+
+            <p
+              class="text-[14px] leading-[136%] pt-[18px] text-[#363636] font font-medium max-sm:text-center"
+            >
+              Karen Smitht
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex speech-bubble speech-bubble-bg-right lg:flex-row flex-col py-[20px] lg:py-0 lg:w-[567px] md:px-[20px] lg:px-0 lg:h-[224px] lg:gap-[39px] gap-[39px] md:gap-[30px] items-center justify-center !bg-[#EAFBF9] border-1 border-black max-sm:px-[10px]"
+        >
+          <img
+            src="images/test4.png"
+            class="lg:w-[133px] lg:h-[133px] w-[133px] h-[133px] md:w-[100px] md:h-[100px]"
+          />
+
+          <div class="flex flex-col items-center lg:items-start">
+            <img src="images/st2.png" class="w-[130px] h-[22px]" />
+
+            <p
+              class="text-[12px] leading-[136%] pt-[12px] text-[#363636] lg:w-[333px] md:w-[285px] font text-center lg:text-start"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis
+              varius id imperdiet. Iaculis mauris venenatis dignissim nisl
+              pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc
+              facilisis.
+            </p>
+
+            <p
+              class="text-[14px] leading-[136%] pt-[18px] text-[#363636] font font-medium max-sm:text-center"
+            >
+              Karen Smitht
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About Section End-->
+
+    <!--Footer Section start-->
+
+    <div
+      class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(136deg,#000_85%,#324845_15%)] max-sm:py-[30px] max-sm:px-[20px] lg:px-0 md:px-[30px]"
+    >
+      <div
+        class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+      >
+        <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+          <h1
+            class="text-[40px] max-sm:text-[35px] font-medium font2 text-[#5C9991]"
+          >
+            For EveryDay Magic
+          </h1>
+          <p
+            class="text-[16px] leading-[150%] font text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px]"
+          >
+            Turn ordinary moments into extraordinary stories! With AI-powered
+            storytelling, create magical keepsakes that bring joy every day.
+          </p>
+
+          <img
+            src="images/logo.png"
+            class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+          />
+          <p class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font">
+            © 2025 — Copyright All Rights reserved
+          </p>
+
+          <div
+            class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+          >
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Terms of Service
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Cookies
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-end max-sm:items-center">
+          <h2 class="text-[19px] leading-[140%] text-white font pt-[23px]">
+            Imagitime
+          </h2>
+          <ul
+            class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] font items-center pt-[24px] sm:items-end"
+          >
+            <li>
+              <a href="/" class="hover:text-white hover:underline"> Home</a>
+            </li>
+
+            <a href="about.html" class="hover:text-white hover:underline"
+              ><li>About Us</li></a
+            >
+            <a href="Books.html" class="hover:text-white hover:underline">
+              <li>Books</li></a
+            >
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Faqs</li></a
+            >
+          </ul>
+
+          <h2
+            class="text-[20px] font-medium leading-[110%] text-white font pt-[79px] max-sm:pt-[35px]"
+          >
+            Contact Us
+          </h2>
+          <p class="text-[14px] leading-[160%] font text-[#F5F5F5] pt-[16px]">
+            support@imagitime.com
+          </p>
+          <p class="text-[10px] leading-[160%] font text-[#979797]">
+            We typically reply within 24 hours.
+          </p>
+
+          <div class="flex flex-row gap-[9px] pt-[32px]">
+            <img src="images/fb.png" class="w-[40px]" />
+            <img src="images/twitter.png" class="w-[40px]" />
+            <img src="images/ok.png" class="w-[40px]" />
+            <img src="images/vk.png" class="w-[40px]" />
+            <img src="images/insta.png" class="w-[40px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section end-->
+  </body>
+</html>

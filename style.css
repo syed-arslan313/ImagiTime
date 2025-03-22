@@ -1,0 +1,82 @@
+.speech-bubble {
+    position: relative;
+    border: 1.8px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    max-width: 567px;
+}
+.speech-bubble-bg{
+    position: relative;
+    border: 1.8px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #E8F8F6;
+    max-width: 567px;
+}
+/* Tail Shape */
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50px;
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.speech-bubble-bg::after{
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50px;
+    width: 100px;
+    height: 35px;
+    background-color:#E8F8F6;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+/* Border Effect */
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 49px;
+    width: 104px;
+    height: 37px;
+    background-color: black;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    z-index: -1;
+}
+.speech-bubble-bg::before {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 49px;
+    width: 104px;
+    height: 37px;
+    background-color: black;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    z-index: -1;
+}
+/* Right Tail */
+.speech-bubble-right::after {
+    left: auto;
+    right: 50px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.speech-bubble-bg-right::after {
+    left: auto;
+    right: 50px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+/* Right Tail Border */
+.speech-bubble-right::before {
+    left: auto;
+    right: 47px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.speech-bubble-bg-right::before {
+    left: auto;
+    right: 47px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
