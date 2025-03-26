@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- start header menu section  -->
+    <div>
+      <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative">
+        <div class="mx-auto xl:px-0 px-5 max-w-[1190px]">
+          <div class="flex h-20 items-center justify-between">
+            <div
+              class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between"
+            >
+              <a class="flex flex-shrink-0 items-center mr-4" href="/">
+                <img
+                  class="h-10 w-auto"
+                  src="assets/img/image 1.png"
+                  alt="React Jobs"
+                />
+              </a>
+              <!-- Mobile Menu Icon -->
+              <img
+                src="assets/img/menu.png"
+                class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                id="menuToggle"
+              />
+
+              <!-- Mobile Menu -->
+              <div
+                id="mobileMenu"
+                class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden"
+              >
+                <!-- Close Button -->
+                <button
+                  id="closeMenu"
+                  class="absolute top-4 right-6 text-3xl font-bold text-gray-600"
+                >
+                  &times;
+                </button>
+                <div class="flex flex-col gap-3 px-5">
+                  <a href="/" class="text-[#5C9991] text-lg">Home</a>
+                  <a href="/Books.html" class="text-[#363636] text-lg">Books</a>
+                  <a href="/about.html" class="text-[#363636] text-lg"
+                    >About Us</a
+                  >
+                  <a href="/contact.html" class="text-[#363636] text-lg"
+                    >Faqs & Contact</a
+                  >
+                </div>
+              </div>
+
+              <!-- Desktop Menu -->
+              <!-- Desktop Menu -->
+              <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                <div class="flex space-x-2">
+                  <a
+                    href="/index.html"
+                    class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                    data-link="index"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="/Books.html"
+                    class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                    data-link="books"
+                  >
+                    Books
+                  </a>
+                  <a
+                    href="/about.html"
+                    class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                    data-link="about"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                    data-link="contact"
+                  >
+                    FAQs & Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end header menu section  -->
+
+    <!--Hero Section Start-->
+
+    <div
+      class="flex flex-col items-center pt-[130px] pb-[121px] bg-[#EAFBF9] max-sm:px-[15px] relative"
+    >
+      <img
+        src="assets/img/hel11.png"
+        class="w-[190px] h-[120px] absolute left-0 top-0 rotate-[358deg] block lg:hidden"
+      />
+
+      <img
+        src="assets/img/hel22.png"
+        class="w-[250px] h-[120px] absolute right-0 bottom-0 rotate-[5deg] block lg:hidden"
+      />
+
+      <div class="flex w-full flex-col relative items-center">
+        <img
+          src="assets/img/hel11.png"
+          class="w-[335px] h-[173px] absolute left-0 top-0 rotate-[358deg] lg:block hidden"
+        />
+        <img
+          src="assets/img/hel22.png"
+          class="w-[396px] h-[188px] absolute right-0 bottom-0 rotate-[5deg] lg:block hidden"
+        />
+
+        <div
+          class="flex w-unset max-sm:w-full flex-col rounded-[20px] border-[1px] border-black bg-white pl-[56px] pr-[64px] py-[69px] max-sm:py-[30px] max-sm:px-[10px] px-[69px]"
+        >
+          <h1
+            class="text-[47px] leading-[60px] text-black font-baloo max-sm:text-[25px] max-sm:leading-[32px]"
+          >
+            Email John’s Preview Link<br />
+            & Show Price of book
+          </h1>
+
+          <p
+            class="text-[16px] leading-[20px] text-black font-poppin pt-[31px]"
+          >
+            Email
+          </p>
+
+          <input
+            type="Email"
+            value="johndoe@gmail.com"
+            class="border-[1px] items-center pl-[18px] rounded-[8px] border-black w-[531px] max-sm:w-full h-[52px] mt-[16px] bg-[#F3F3F3] text-[16px] leading-[20px] text-[#595959]"
+          />
+
+          <p
+            class="text-[16px] leading-[20px] text-black font-poppin pt-[31px]"
+          >
+            Your Name
+          </p>
+
+          <input
+            type="Name"
+            value="John Doe"
+            class="border-[1px] items-center pl-[18px] rounded-[8px] border-black w-[531px] max-sm:w-full h-[52px] mt-[16px] text-[16px] leading-[20px] text-[#595959]"
+          />
+
+          <p
+            class="text-[16px] leading-[20px] text-black font-poppin pt-[31px] md:w-[455px]"
+          >
+            Want 10% instant discount and early access to new book by oining our
+            email list
+          </p>
+
+          <form
+            class="mt-[16px] flex items-center w-full gap-[42px] max-sm:gap-[20px]"
+          >
+            <div>
+              <input
+                type="radio"
+                name="offer"
+                value="Yes"
+                id="yes"
+                class="custom-radio"
+              />
+              <label
+                for="yes"
+                class="text-[20px] leading-[26px] font-poppin text-black pl-[10px] max-sm:text-[15px]"
+                >Yes, I’d love that</label
+              >
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="offer"
+                value="No"
+                id="no"
+                class="custom-radio"
+              />
+              <label
+                for="no"
+                class="text-[20px] leading-[26px] font-poppin text-black pl-[10px] max-sm:text-[15px]"
+                >No, I’ll pay full price</label
+              >
+            </div>
+          </form>
+
+          <a
+            href=""
+            class="flex flex-col items-center justify-center bg-[#FADA7A] h-[52px] rounded-[8px] mt-[31px]"
+          >
+            <p class="text-[18px] leading-[20px] font-poppin text-black">
+              Save Preview and Show Price
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Hero Section end-->
+
+    <!--Footer Section start-->
+    <div
+      class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(to_bottom_right,_black_75%,_#324845_91%)] max-sm:py-[30px] max-sm:px-[20px] xl:px-0 md:px-[30px] px-5"
+    >
+      <div
+        class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+      >
+        <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+          <h1
+            class="text-[40px] max-sm:text-[35px] font-medium text-[#5C9991] font-baloo"
+          >
+            For EveryDay Magic
+          </h1>
+          <p
+            class="text-[16px] leading-[28px] text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px] font-poppin"
+          >
+            Turn ordinary moments into extraordinary stories! With AI-powered
+            storytelling, create magical keepsakes that bring joy every day.
+          </p>
+          <img
+            src="assets/img/image 1.svg"
+            class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+          />
+          <p
+            class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font-poppin"
+          >
+            © 2025 — Copyright All Rights reserved
+          </p>
+          <div
+            class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+          >
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Terms of Service
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Cookies
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end max-sm:items-center">
+          <h2
+            class="text-[19px] leading-[140%] text-white pt-[23px] font-poppin"
+          >
+            Imagitime
+          </h2>
+          <ul
+            class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] items-center pt-[24px] sm:items-end font-light font-poppin"
+          >
+            <li>
+              <a href="/" class="hover:text-white hover:underline"> Home</a>
+            </li>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>About Us</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Books</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Faqs</li>
+            </a>
+          </ul>
+          <h2
+            class="text-[20px] font-medium leading-[110%] text-white pt-[79px] max-sm:pt-[35px] font-poppin"
+          >
+            Contact Us
+          </h2>
+          <p
+            class="text-[14px] leading-[160%] text-[#F5F5F5] pt-[16px] font-poppin"
+          >
+            support@imagitime.com
+          </p>
+          <p class="text-[10px] leading-[160%] text-[#979797] font-poppin">
+            We typically reply within 24 hours.
+          </p>
+          <div class="flex flex-row flex-wrap gap-[9px] pt-[32px]">
+            <img src="assets/img/item.svg" class="w-[40px]" />
+            <img src="assets/img/item (1).svg" class="w-[40px]" />
+            <img src="assets/img/item (2).svg" class="w-[40px]" />
+            <img src="assets/img/col.svg" class="w-[40px]" />
+            <img src="assets/img/col (1).svg" class="w-[40px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section end-->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</html>

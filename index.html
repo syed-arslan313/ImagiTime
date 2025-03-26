@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+       <!-- start header menu section  -->
+       <div>
+        <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative">
+          <div class="mx-auto xl:px-0 px-5 max-w-[1190px]">
+            <div class="flex h-20 items-center justify-between">
+              <div
+                class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between"
+              >
+                <a class="flex flex-shrink-0 items-center mr-4" href="/">
+                  <img
+                    class="h-10 w-auto"
+                    src="assets/img/image 1.png"
+                    alt="React Jobs"
+                  />
+                </a>
+                <!-- Mobile Menu Icon -->
+                <img
+                  src="assets/img/menu.png"
+                  class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                  id="menuToggle"
+                />
+  
+                <!-- Mobile Menu -->
+                <div
+                  id="mobileMenu"
+                  class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden"
+                >
+                  <!-- Close Button -->
+                  <button
+                    id="closeMenu"
+                    class="absolute top-4 right-6 text-3xl font-bold text-gray-600"
+                  >
+                    &times;
+                  </button>
+                  <div class="flex flex-col gap-3 px-5">
+                    <a href="/" class="text-[#5C9991] text-lg">Home</a>
+                    <a href="/Books.html" class="text-[#363636] text-lg">Books</a>
+                    <a href="/about.html" class="text-[#363636] text-lg"
+                      >About Us</a
+                    >
+                    <a href="/contact.html" class="text-[#363636] text-lg"
+                      >Faqs & Contact</a
+                    >
+                  </div>
+                </div>
+  
+                <!-- Desktop Menu -->
+                <!-- Desktop Menu -->
+                <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                  <div class="flex space-x-2">
+                    <a
+                      href="/index.html"
+                      class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                      data-link="index"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="/Books.html"
+                      class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                      data-link="books"
+                    >
+                      Books
+                    </a>
+                    <a
+                      href="/about.html"
+                      class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                      data-link="about"
+                    >
+                      About Us
+                    </a>
+                    <a
+                      href="/contact.html"
+                      class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                      data-link="contact"
+                    >
+                      FAQs & Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- end header menu section  -->
+
+    <!-- homepage herosection  -->
+    <section class="bg-[#EAFBF9]">
+      <div
+        class="max-w-[1190px] md:py-20 py-16 xl:px-0 px-5 mx-auto flex md:flex-row flex-col items-center justify-between"
+      >
+        <div class="md:max-w-[50%] w-full">
+          <div
+            class="sprinkle_wrapper flex md:gap-[14px] gap-1 flex-row items-center"
+          >
+            <div class="img_wrapper_ar w-[74px]">
+              <img src="assets/img/Frame (2).svg" alt="Sprinkle Image" />
+            </div>
+            <div class="text_side_ar">
+              <h6 class="text-[#363636] text-[26.17px] font-baloo">
+                Make Them Feel Truly Special
+              </h6>
+            </div>
+            <div
+              class="reviews_ar rotate-[-20deg] origin-[-60%_0%] flex flex-row md:gap-2 gap-0 items-center justify-center w-[74px] h-[40px] bg-[#5C9991] rounded-md"
+            >
+              <span class="text-lg font-bold text-white">4.9</span>
+              <div class="text-[#E6BF6E] text-2xl h-[36px]">★</div>
+            </div>
+          </div>
+          <div class="heading_wrapper">
+            <h2
+              class="hero_heading_ar text-[51px] font-bold text-[#5C9991] max-w-[600px] font-baloo"
+            >
+              Transform <span> Memories </span> into Magical Storybooks
+            </h2>
+            <p
+              class="text-sm text-[#363636] mt-[14px] max-w-[550px] leading-6 font-poppin"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Ipsum has been the industry's standard dummy text ever
+              since the 1500s, unknown printer took a galley of type and
+              scrambled it to make a type book. It has survived not only five
+              centuries, but also the leap into electro
+            </p>
+            <div
+              class="mt-10 cta_wrapper mt-7 flex md:flex-row flex-col gap-[34px]"
+            >
+              <button
+                class="bg-[#FADA7A] text-[#363636] font-medium px-10 py-3 rounded-md text-lg items-center gap-2 shadow-md font-poppin"
+              >
+                Child’s Book ➝
+              </button>
+              <img
+                src="assets/img/Frame 18.svg"
+                alt="pictures"
+                class="h-[70px] md:h-full"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="image_wrapper_ar md:w-[45%] w-full">
+          <img src="assets/img/books 1.svg" alt="Hero Image" class="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- why are you buying section  -->
+    <div
+      class="why-bying-section px-5 md:h-[200px] h-[90px] flex items-center justify-center bg-hide-mobile"
+    >
+      <h2
+        class="lg:text-4xl md:text-2xl text-4xl font-semibold text-center text-black font-baloo"
+      >
+        Who Are You Buying For?
+      </h2>
+    </div>
+
+    <section class="md:pb-[126px] pb-[50px] bg-[linear-gradient(to_bottom_right,_white_85%,_#5C9991_115%)] ">
+      <div
+        class="inner_wrappe_ar max-w-[1190px] mx-auto flex md:flex-row flex-col gap-14 p-8 rounded-[17px] kids_section_shadow_ar bg-white items-center"
+      >
+        <div class="section_img_wrapper_ar md:w-[523px] w-full">
+          <img
+            src="assets/img/whyyyyysection.svg"
+            alt="Kids Image"
+            class="w-full rounded-[15px]"
+          />
+        </div>
+        <div class="section_content_ar md:max-w-[504px]">
+          <h2 class="text-[38px] font-medium text-black font-baloo">
+            For Kids
+          </h2>
+          <p class="font-normal leading-[29px] text-[#363636] mt-4 font-poppin">
+            Every child dreams of being the hero of their own story. With our
+            AI-powered storybooks, you can turn their photos into personalized
+            adventures filled with magic, wonder, and excitement.<br />
+            <br />
+            These make reading more engaging and special. Designed to spark
+            creativity and build lasting memories, they are the perfect gift for
+            birthdays, bedtime, or any moment worth cherishing. Let your child
+            be the star of their own unforgettable journey!
+          </p>
+          <div class="cta_wrapper_ar mt-5">
+            <button
+              class="bg-[#FADA7A] text-[#363636] font-medium px-10 py-3 rounded-md text-lg flex items-center gap-2 shadow-md font-poppin"
+            >
+              Create My Child’s Book ➝
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home page slider  -->
+    <div class="md:py-20 py-10 bg-[#EAFBF9] px-5 hompage-slider-am relative">
+      <h2
+        class="text-4xl font-semibold text-center text-black mb-10 font-baloo"
+      >
+        Choose Your Books
+      </h2>
+
+      <!-- Swiper Container -->
+      <div class="relative max-w-[1190px] mx-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper flex">
+            <!-- Slide 1 -->
+            <div class="swiper-slide rounded-lg">
+              <img
+                src="assets/img/Screenshot 2025-02-24 at 11.06.08 AM 1.svg"
+                alt="Alphabet Adventure"
+                class="rounded-lg w-full"
+              />
+              <h3 class="text-3xl font-medium mt-8 font-baloo">
+                Alphabet Adventure
+              </h3>
+              <p
+                class="text-gray-600 text-sm pr-5 mt-4 font-poppin leading-[25px]"
+              >
+                Upload a photo or use text and emojis to create your characters.
+                We'll illustrate them and let you edit until you're happy!
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide rounded-lg">
+              <img
+                src="assets/img/Screenshot 2025-02-24 at 11.25.26 AM 1.svg"
+                alt="Child Fixes It All"
+                class="rounded-lg w-full"
+              />
+              <h3 class="text-3xl font-medium mt-8 font-baloo">
+                Child Fixes It All
+              </h3>
+              <p
+                class="text-gray-600 text-sm pr-5 mt-4 font-poppin leading-[25px]"
+              >
+                Describe the scene and let Naria weave together playful writing
+                with matching illustrations. Easily tweak and perfect to make it
+                just right.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide rounded-lg">
+              <img
+                src="assets/img/Screenshot 2025-02-24 at 11.25.38 AM 1.svg"
+                alt="Child Wonders"
+                class="rounded-lg w-full"
+              />
+              <h3 class="text-3xl font-medium mt-8 font-baloo">
+                Child Wonders
+              </h3>
+              <p
+                class="text-gray-600 text-sm pr-5 mt-4 font-poppin leading-[25px]"
+              >
+                Share stories digitally or have a hardcover version printed.
+                Your kiddo will be so proud to have a printed book of their own
+                imagination!
+              </p>
+            </div>
+
+            <div class="swiper-slide rounded-lg">
+              <img
+                src="assets/img/Screenshot 2025-02-24 at 11.06.08 AM 1.svg"
+                alt="Child Wonders"
+                class="rounded-lg w-full"
+              />
+              <h3 class="text-3xl font-medium mt-8 font-baloo">
+                Child Wonders
+              </h3>
+              <p
+                class="text-gray-600 text-sm pr-5 mt-4 font-poppin leading-[25px]"
+              >
+                Share stories digitally or have a hardcover version printed.
+                Your kiddo will be so proud to have a printed book of their own
+                imagination!
+              </p>
+            </div>
+
+            <div class="swiper-slide rounded-lg">
+              <img
+                src="assets/img/Screenshot 2025-02-24 at 11.25.26 AM 1.svg"
+                alt="Child Wonders"
+                class="rounded-lg w-full"
+              />
+              <h3 class="text-3xl font-medium mt-8 font-baloo">
+                Child Wonders
+              </h3>
+              <p
+                class="text-gray-600 text-sm pr-5 mt-4 font-poppin leading-[25px]"
+              >
+                Share stories digitally or have a hardcover version printed.
+                Your kiddo will be so proud to have a printed book of their own
+                imagination!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          class="swiper-button-prev absolute top-1/2 xl:left-[-55px] left-0"
+        ></button>
+        <button
+          class="swiper-button-next absolute top-1/2 xl:right-[-55px] right-0"
+        ></button>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-16"></div>
+    </div>
+
+    <!-- home page stories section  -->
+    <div
+      class="bg-[linear-gradient(to_top_left,_white_85%,_#5C9991_115%)] px-5 flex justify-center items-center"
+    >
+      <div
+        class="max-w-[1190px] w-full md:py-32 py-10 flex flex-col md:flex-row items-center gap-20"
+      >
+        <!-- Left Content -->
+        <div class="flex-1 md:w-[40%] w-full">
+          <h1
+            class="lg:text-5xl text-4xl font-medium text-[#5C9991] flex items-center gap-10 font-baloo"
+          >
+            Hero of Stories
+            <img src="assets/img/Frame.svg" alt="" class="h-[62px]" />
+          </h1>
+          <p class="text-[#363636] mt-4 text-base leading-[33px] font-poppin">
+            Turn their photos and memories into a one-of-a-kind storybook where
+            they become the main character. A magical way to celebrate kids and
+            grown-ups alike!
+          </p>
+          <ul class="mt-4 space-y-2 text-[#363636] text-base font-poppin ml-[8px]">
+            <li class="flex items-center gap-2">
+              • Bring their adventures to life with personalized storytelling.
+              📜
+            </li>
+            <li class="flex items-center gap-2">
+              • Every story is unique, just like them! 📖
+            </li>
+            <li class="flex items-center gap-2">
+              • Create a keepsake they’ll cherish forever. 💫
+            </li>
+          </ul>
+          <button
+            class="mt-6 bg-[#FADA7A] text-[#363636] font-medium px-6 py-3 rounded-md text-lg flex items-center gap-2 shadow-md font-poppin"
+          >
+            Child’s Book ➝
+          </button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="relative flex-1 md:w-[60%] w-full">
+          <img
+            src="assets/img/Frame 6565.svg"
+            alt="Storybook Image"
+            class="rounded-xl w-full"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- perfect gift section  -->
+    <div
+      class="bg-[linear-gradient(to_bottom_left,_white_85%,_#5C9991_115%)] px-5 flex justify-center items-center"
+    >
+      <div
+        class="max-w-[1190px] w-full md:pb-32 pb-10 pt-7 flex flex-col md:flex-row items-center gap-20"
+      >
+        <!-- left Image -->
+        <div class="relative flex-1 md:w-[60%] w-full">
+          <img
+            src="assets/img/Frame 6565 (1).svg"
+            alt="Storybook Image"
+            class="rounded-xl w-full"
+          />
+        </div>
+        <!-- right Content -->
+        <div class="flex-1 md:w-[40%] w-full">
+          <h1
+            class="lg:text-5xl text-4xl font-medium text-[#5C9991] flex items-center gap-10 font-baloo"
+          >
+            The Perfect Gift
+            <img src="assets/img/Frame (1).svg" alt="" class="h-[62px]" />
+          </h1>
+          <p class="text-[#363636] mt-4 text-base leading-[33px] font-poppin">
+            Give a gift that’s truly one of a kind. Personalized storybooks turn
+            memories into magical adventures, making every moment unforgettable.
+            Whether for kids or grown-ups, it’s a heartfelt keepsake they’ll
+            treasure forever.
+          </p>
+          <ul class="mt-4 space-y-2 text-[#363636] text-base font-poppin ml-[8px]">
+            <li class="flex items-center gap-2">
+              • Makes occasions memorable 🎂
+            </li>
+            <li class="flex items-center gap-2">
+              • Fosters a love for reading 📖
+            </li>
+            <li class="flex items-center gap-2">• Inspires big dreams 🌌</li>
+          </ul>
+          <button
+            class="mt-6 bg-[#FADA7A] text-[#363636] font-medium px-6 py-3 rounded-md text-lg flex items-center gap-2 shadow-md font-poppin"
+          >
+            Gift Now ➝
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- why imagitime section  -->
+    <div
+      class="bg-[#EAFBF9] flex justify-center items-center px-5 md:py-24 py-10"
+    >
+      <div class="max-w-[1190px] w-full">
+        <h2
+          class="text-center text-4xl font-medium text-black mb-16 font-baloo"
+        >
+          Why Imagitime?
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:gap-36 gap-10 text-center"
+        >
+          <!-- Instant Previews -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-file-alt text-6xl text-[#5C9991] mb-8"></i>
+            <h3 class="text-2xl font-medium text-black mb-4 font-baloo">
+              Instant Previews
+            </h3>
+            <p class="text-[#363636] text-sm max-w-[260px] font-poppin">
+              See your story come to life in just 2 minutes! No waiting, no
+              hassle—just fast, magical storytelling at your fingertips.
+            </p>
+          </div>
+
+          <!-- Top-Tier Privacy -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-shield-alt text-6xl text-[#5C9991] mb-8"></i>
+            <h3 class="text-2xl font-medium text-black mb-4">
+              Top-Tier Privacy
+            </h3>
+            <p class="text-[#363636] text-sm max-w-[260px] font-poppin">
+              Your privacy is our top priority. We use the highest standards of
+              security to ensure your photos and data are always protected.
+            </p>
+          </div>
+
+          <!-- Fast & Easy -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-stopwatch text-6xl text-[#5C9991] mb-8"></i>
+            <h3 class="text-2xl font-medium text-black mb-4">Fast & Easy</h3>
+            <p class="text-[#363636] text-sm max-w-[260px] font-poppin">
+              Simply upload a photo, and our AI instantly transforms it into a
+              magical adventure. No design skills needed, just a few clicks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- what people say about section  -->
+    <div
+      class="bg-[linear-gradient(to_top_right,_white_85%,_#5C9991_115%)] px-5 md:py-24 py-16 flex flex-col justify-center items-center"
+    >
+      <h2
+        class="text-center text-4xl font-semibold text-black mb-16 font-baloo"
+      >
+        What People Say About Us
+      </h2>
+      <div
+        class="max-w-[1190px] w-full pt-7 grid lg:grid-cols-2 grid-cols-1 items-center gap-20"
+      >
+        <div
+          class="relative border-2 border-black rounded-2xl md:p-5 p-2 max-w-md speech-bubble speech-bubble-right bg-[#EAFBF9] flex space-x-4 min-w-[100%]"
+        >
+          <img
+            src="assets/img/Ellipse 8 (4).svg"
+            class="md:h-[133px] md:w-[133px] h-[80px] w-[80px]"
+          />
+          <div>
+            <div class="text-[#E6BF6E] text-2xl">★ ★ ★ ★ ★</div>
+            <p class="text-gray-700 text-sm mt-2 font-poppin">
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis varius id imperdiet. Iaculis mauris venenatis dignissim nisl pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc facilisis .
+            </p>
+            <hr class="w-[80%] h-[1px] bg-[#DEDEDE] mt-[9px]">
+            <p class="text-black font-semibold mt-2 font-baloo">Karen Smitth</p>
+          </div>
+        </div>
+        <div
+          class="relative border-2 border-black rounded-2xl md:p-5 p-2 max-w-md speech-bubble speech-bubble-right speech-bubble-white bg-white flex space-x-4 min-w-[100%]"
+        >
+          <img
+            src="assets/img/Ellipse 8 (5).svg"
+            class="md:h-[133px] md:w-[133px] h-[80px] w-[80px]"
+          />
+          <div>
+            <div class="text-[#E6BF6E] text-2xl">★ ★ ★ ★ ★</div>
+            <p class="text-gray-700 text-sm mt-2 font-poppin">
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis varius id imperdiet. Iaculis mauris venenatis dignissim nisl pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc facilisis .
+            </p>
+            <hr class="w-[80%] h-[1px] bg-[#DEDEDE] mt-[9px]">
+            <p class="text-black font-semibold mt-2 font-baloo">Julia Wade</p>
+          </div>
+        </div>
+        <div
+          class="relative border-2 border-black rounded-2xl md:p-5 p-2 max-w-md speech-bubble speech-bubble-right speech-bubble-white bg-white flex space-x-4 min-w-[100%]"
+        >
+          <img
+            src="assets/img/Ellipse 8 (6).svg"
+            class="md:h-[133px] md:w-[133px] h-[80px] w-[80px]"
+          />
+          <div>
+            <div class="text-[#E6BF6E] text-2xl">★ ★ ★ ★ ★</div>
+            <p class="text-gray-700 text-sm mt-2 font-poppin">
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis varius id imperdiet. Iaculis mauris venenatis dignissim nisl pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc facilisis .
+            </p>
+            <hr class="w-[80%] h-[1px] bg-[#DEDEDE] mt-[9px]">
+            <p class="text-black font-semibold mt-2 font-baloo">Lily Bakers</p>
+          </div>
+        </div>
+        <div
+          class="relative border-2 border-black rounded-2xl md:p-5 p-2 max-w-md speech-bubble speech-bubble-right bg-[#EAFBF9] flex space-x-4 min-w-[100%]"
+        >
+          <img
+            src="assets/img/Ellipse 8 (3).svg"
+            class="md:h-[133px] md:w-[133px] h-[80px] w-[80px]"
+          />
+          <div>
+            <div class="text-[#E6BF6E] text-2xl">★ ★ ★ ★ ★</div>
+            <p class="text-gray-700 text-sm mt-2 font-poppin">
+              Lorem ipsum dolor sit amet consectetur. Nulla nunc facilisis varius id imperdiet. Iaculis mauris venenatis dignissim nisl pretium justo lacus nunc. ipsum dolor amet consectetur. Nulla nunc facilisis .
+            </p>
+            <hr class="w-[80%] h-[1px] bg-[#DEDEDE] mt-[9px]">
+            <p class="text-black font-semibold mt-3 font-baloo">Amber Holland</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hompage last section  -->
+    <div class="px-5">
+      <img
+        src="assets/img/Group 39.svg"
+        alt="Astronauts in Spaceships"
+        class="mt-10"
+      />
+    </div>
+
+    <!-- contact page accordion section  -->
+    <div
+      class="flex justify-center pb-16 md:pb-0 px-5 items-center bg-gradient-to-b from-white to-gray-100"
+    >
+      <div class="w-[1000px]">
+        <!-- Title Section -->
+        <div class="text-center mb-14 font-baloo">
+          <p class="text-gray-600 text-xl">Questions & Answers</p>
+          <h1 class="text-[40px] font-normal mt-1">
+            Learn more about our platform
+          </h1>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="flex md:flex-row flex-col justify-between">
+          <div class="space-y-6 md:w-[49%] w-full md:h-[535px] mb-7 md:mb-0">
+            <!-- FAQ Item -->
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 flex font-baloo justify-between items-center bg-[#EAFBF9] text-[#5C9991] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm open font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6 md:w-[49%] w-full">
+            <!-- FAQ Item -->
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section start-->
+    <div
+      class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(to_bottom_right,_black_75%,_#324845_91%)] max-sm:py-[30px] max-sm:px-[20px] xl:px-0 md:px-[30px] px-5"
+    >
+      <div
+        class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+      >
+        <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+          <h1
+            class="text-[40px] max-sm:text-[35px] font-medium text-[#5C9991] font-baloo"
+          >
+            For EveryDay Magic
+          </h1>
+          <p
+            class="text-[16px] leading-[28px] text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px] font-poppin"
+          >
+            Turn ordinary moments into extraordinary stories! With AI-powered
+            storytelling, create magical keepsakes that bring joy every day.
+          </p>
+          <img
+            src="assets/img/image 1.svg"
+            class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+          />
+          <p
+            class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font-poppin"
+          >
+            © 2025 — Copyright All Rights reserved
+          </p>
+          <div
+            class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+          >
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Terms of Service
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Cookies
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end max-sm:items-center">
+          <h2
+            class="text-[19px] leading-[140%] text-white pt-[23px] font-poppin"
+          >
+            Imagitime
+          </h2>
+          <ul
+            class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] items-center pt-[24px] sm:items-end font-light font-poppin"
+          >
+            <li>
+              <a href="/" class="hover:text-white hover:underline"> Home</a>
+            </li>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>About Us</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Books</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Faqs</li>
+            </a>
+          </ul>
+          <h2
+            class="text-[20px] font-medium leading-[110%] text-white pt-[79px] max-sm:pt-[35px] font-poppin"
+          >
+            Contact Us
+          </h2>
+          <p
+            class="text-[14px] leading-[160%] text-[#F5F5F5] pt-[16px] font-poppin"
+          >
+            support@imagitime.com
+          </p>
+          <p class="text-[10px] leading-[160%] text-[#979797] font-poppin">
+            We typically reply within 24 hours.
+          </p>
+          <div class="flex flex-row flex-wrap gap-[9px] pt-[32px]">
+            <img src="assets/img/item.svg" class="w-[40px]" />
+            <img src="assets/img/item (1).svg" class="w-[40px]" />
+            <img src="assets/img/item (2).svg" class="w-[40px]" />
+            <img src="assets/img/col.svg" class="w-[40px]" />
+            <img src="assets/img/col (1).svg" class="w-[40px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section end-->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</html>

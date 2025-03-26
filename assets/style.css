@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.font-poppin {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-baloo {
+    font-family: "Baloo 2", sans-serif;
+}
+.font3 {
+    font-family: "Inter", sans-serif;
+  }
+
+
+.nav-link {
+    color: #363636;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #5C9991;
+  }
+  
+  .nav-link.active {
+    color: #5C9991;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+  }
+
+.hompage-slider-am button::after {
+    background: #5C9991;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: white;
+}
+
+.swiper-pagination {
+    position: relative;
+}
+
+.swiper-pagination span {
+    height: 14px;
+    width: 14px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5C9991;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50px;
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -37px;
+    left: 49px;
+    width: 104px;
+    height: 37px;
+    background-color: black;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.speech-bubble-right::after {
+    left: auto;
+    right: 50px;
+    background-color: #EAFBF9;
+}
+
+.speech-bubble-white::after {
+    left: auto;
+    right: 50px;
+    background-color: white;
+}
+
+.speech-bubble-right::before {
+    left: auto;
+    right: 48px;
+}
+
+.hero_heading_ar span::after {
+    content: "";
+    background-image: url('img/Vector_underline.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 236px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.hero_heading_ar span {
+    position: relative;
+}
+
+.kids_section_shadow_ar {
+    box-shadow: 0px 178.116px 71.246px 0px rgba(0, 0, 0, 0.01), 0px 237.488px 59.372px 0px rgba(0, 0, 0, 0.00), 0px 15.437px 34.436px 0px rgba(0, 0, 0, 0.10);
+}
+
+.why-bying-section {
+    background-image: url('img/Group 40.svg');
+    background-size: contain;
+    /* Ensure the image covers the entire section */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out, padding 0.1s ease-in-out;
+    padding: 0;
+    /* Start with no padding */
+}
+
+.accordion-content.open {
+    max-height: 500px;
+    /* Adjust based on content */
+    opacity: 1;
+    padding: 0px 28px 15px 28px
+        /* Equivalent to p-5 */
+}
+
+@media (max-width: 768px) {
+    .bg-hide-mobile {
+        background-image: none;
+    }
+}
+
+.storybookpagination span{
+    height: 10px;
+    width: 10px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #5c9991;
+  }
+  .next-prev-button-am.swiper-button-prev {
+    left: 35px;
+  }
+  .next-prev-button-am.swiper-button-next {
+    right: 35px;
+  }
+  .next-prev-button-am::after {
+    background: white;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: #5c9991;
+  }
+
+
+  /* Hide default radio button */
+.custom-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+    vertical-align: middle;
+  }
+  
+  /* Checked state: Green border and filled dot */
+  .custom-radio:checked {
+    border-color: #5C9991;
+  }
+  
+  .custom-radio:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #5C9991;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Reset unselected radio buttons */
+  .books-Select-opption select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 12px;
+  }
+  .custom-radio:not(:checked) {
+    border-color: #666;
+  }
+  
+  .custom-radio:not(:checked)::before {
+    content: none;
+  }

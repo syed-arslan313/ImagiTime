@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+        <!-- start header menu section  -->
+        <div>
+          <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative" >
+            <div class="mx-auto xl:px-0 px-5 max-w-[1190px]">
+              <div class="flex h-20 items-center justify-between">
+                <div
+                  class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between"
+                >
+                  <a class="flex flex-shrink-0 items-center mr-4" href="/">
+                    <img
+                      class="h-10 w-auto"
+                      src="assets/img/image 1.png"
+                      alt="React Jobs"
+                    />
+                  </a>
+                  <!-- Mobile Menu Icon -->
+                  <img
+                    src="assets/img/menu.png"
+                    class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                    id="menuToggle"
+                  />
+    
+                  <!-- Mobile Menu -->
+                  <div
+                    id="mobileMenu"
+                    class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden"
+                  >
+                    <!-- Close Button -->
+                    <button
+                      id="closeMenu"
+                      class="absolute top-4 right-6 text-3xl font-bold text-gray-600"
+                    >
+                      &times;
+                    </button>
+                    <div class="flex flex-col gap-3 px-5">
+                      <a href="/" class="text-[#5C9991] text-lg">Home</a>
+                      <a href="/Books.html" class="text-[#363636] text-lg">Books</a>
+                      <a href="/about.html" class="text-[#363636] text-lg"
+                        >About Us</a
+                      >
+                      <a href="/contact.html" class="text-[#363636] text-lg"
+                        >Faqs & Contact</a
+                      >
+                    </div>
+                  </div>
+    
+                  <!-- Desktop Menu -->
+                  <!-- Desktop Menu -->
+                  <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                    <div class="flex space-x-2">
+                      <a
+                        href="/index.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="index"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="/Books.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="books"
+                      >
+                        Books
+                      </a>
+                      <a
+                        href="/about.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="about"
+                      >
+                        About Us
+                      </a>
+                      <a
+                        href="/contact.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="contact"
+                      >
+                        FAQs & Contact
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- end header menu section  -->
+
+    <!-- contact page hero section  -->
+    <div class="md:pt-14 pt-8 px-5 flex justify-center">
+      <img
+        src="assets/img/Group 39.svg"
+        alt="Astronauts in Spaceships"
+        class="mt-10"
+      />
+    </div>
+
+    <!-- contact page accordion section  -->
+    <div
+      class="flex justify-center pb-16 md:pb-0 px-5 items-center bg-[linear-gradient(to_bottom_right,_white_85%,_#5C9991_115%)]  from-white to-gray-100  "
+    >
+      <div class="w-[1000px]">
+        <!-- Title Section -->
+        <div class="text-center mb-14 font-baloo">
+          <p class="text-gray-600 text-xl">Questions & Answers</p>
+          <h1 class="text-[40px] font-normal mt-1">
+            Learn more about our platform
+          </h1>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="flex md:flex-row flex-col justify-between">
+          <div class="space-y-6 md:w-[49%] w-full md:h-[535px] mb-7 md:mb-0">
+            <!-- FAQ Item -->
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 flex font-baloo justify-between items-center bg-[#EAFBF9] text-[#5C9991] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm open font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6 md:w-[49%] w-full">
+            <!-- FAQ Item -->
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+            <div class="border border-black rounded-lg overflow-hidden">
+              <button
+                class="w-full py-5 px-7 font-baloo flex justify-between items-center bg-[#F2F2F2] text-[#363636] font-semibold rounded-t-lg accordion-header text-xl"
+              >
+                Price of the book in UK
+                <i class="fas fa-minus"></i>
+              </button>
+              <div
+                class="text-gray-700 text-sm font-poppin accordion-content bg-[#EAFBF9]"
+              >
+                For Email Subscribers: Paperback - £24.99, Hardcover - £34.99,
+                Shipping - £4.99. <br />
+                For Non Subscribers: Paperback - £27.77, Hardcover - £38.88,
+                Shipping - £4.99.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact page form section  -->
+    <div
+      class="bg-[#EAF8F6] flex justify-center items-center md:py-16 py-10 px-5 relative"
+    >
+      <div
+        class="w-[1100px] mx-auto flex lg:flex-row flex-col items-start justify-between"
+      >
+        <!-- Left Section -->
+        <div
+          class="lg:w-[40%] w-full lg:px-0 mb-5 md:pt-10 pt-0 font-medium font-baloo"
+        >
+          <h2
+            class="text-black lg:text-5xl text-4xl lg:leading-[55px] leading-[48px]"
+          >
+            Contact to<br />
+            Our Team:
+          </h2>
+          <img
+            src="assets/img/Group 38.svg"
+            alt="Astronauts in Spaceships"
+            class="mt-10 absolute left-0 lg:bottom-[60px] bottom-[-100px] w-[30%] sm:block hidden"
+          />
+        </div>
+
+        <!-- Right Section -->
+        <div
+          class="lg:w-[60%] w-full bg-white p-10 rounded-xl shadow-md border border-black"
+        >
+          <h2
+            class="lg:text-5xl text-4xl text-black mb-2 font-medium leading-[50px] lg:leading-[60px] font-baloo"
+          >
+            Got any questions? We've <br />
+            got you covered.
+          </h2>
+          <p class="text-gray-600 my-5 font-poppin">
+            Tell us more about yourself and what you got in mind
+          </p>
+
+          <form class="font-poppin">
+            <div class="mb-4">
+              <input
+                placeholder="Your Name"
+                type="text"
+                class="py-3 mt-1 block w-full border-b border-black  outline-none focus:border-black placeholder-black text-[16px]"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                placeholder="Your Email"
+                type="email"
+                class="py-3 mt-1 block w-full border-b border-black outline-none focus:border-black placeholder-black text-[16px]"
+              />
+            </div>
+            <div class="my-6">
+              <label class="block text-[16px] font-medium text-black mb-3 pt-[15px]"
+                >Your Message</label
+              >
+              <textarea
+                class="mt-1 block w-full border border-black rounded-md p-2 outline-none focus:border-black"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-[#FADA7A] text-black py-[15px] mt-8 rounded-md font-medium"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Section start-->
+    <div
+      class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(to_bottom_right,_black_75%,_#324845_91%)] max-sm:py-[30px] max-sm:px-[20px] xl:px-0 md:px-[30px] px-5"
+    >
+      <div
+        class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+      >
+        <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+          <h1
+            class="text-[40px] max-sm:text-[35px] font-medium text-[#5C9991] font-baloo"
+          >
+            For EveryDay Magic
+          </h1>
+          <p
+            class="text-[16px] leading-[28px] text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px] font-poppin"
+          >
+            Turn ordinary moments into extraordinary stories! With AI-powered
+            storytelling, create magical keepsakes that bring joy every day.
+          </p>
+          <img
+            src="assets/img/image 1.svg"
+            class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+          />
+          <p
+            class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font-poppin"
+          >
+            © 2025 — Copyright All Rights reserved
+          </p>
+          <div
+            class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+          >
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Terms of Service
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Cookies
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end max-sm:items-center">
+          <h2
+            class="text-[19px] leading-[140%] text-white pt-[23px] font-poppin"
+          >
+            Imagitime
+          </h2>
+          <ul
+            class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] items-center pt-[24px] sm:items-end font-light font-poppin"
+          >
+            <li>
+              <a href="/" class="hover:text-white hover:underline"> Home</a>
+            </li>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>About Us</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Books</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Faqs</li>
+            </a>
+          </ul>
+          <h2
+            class="text-[20px] font-medium leading-[110%] text-white pt-[79px] max-sm:pt-[35px] font-poppin"
+          >
+            Contact Us
+          </h2>
+          <p
+            class="text-[14px] leading-[160%] text-[#F5F5F5] pt-[16px] font-poppin"
+          >
+            support@imagitime.com
+          </p>
+          <p class="text-[10px] leading-[160%] text-[#979797] font-poppin">
+            We typically reply within 24 hours.
+          </p>
+          <div class="flex flex-row flex-wrap gap-[9px] pt-[32px]">
+            <img src="assets/img/item.svg" class="w-[40px]" />
+            <img src="assets/img/item (1).svg" class="w-[40px]" />
+            <img src="assets/img/item (2).svg" class="w-[40px]" />
+            <img src="assets/img/col.svg" class="w-[40px]" />
+            <img src="assets/img/col (1).svg" class="w-[40px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section end-->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</html>

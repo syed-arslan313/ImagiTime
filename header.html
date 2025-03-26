@@ -1,0 +1,56 @@
+<!-- start header menu section  -->
+    <div>
+        <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative">
+            <div class="mx-auto xl:px-0 px-5 max-w-[1190px] ">
+                <div class="flex h-20 items-center justify-between">
+                    <div
+                        class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between">
+                        <a class="flex flex-shrink-0 items-center mr-4" href="/imagitime">
+                            <img class="h-10 w-auto" src="assets/img/image 1.png" alt="React Jobs" />
+                        </a>
+                        <!-- Mobile Menu Icon -->
+                        <img src="assets/img/menu.png" class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                            id="menuToggle" />
+
+                        <!-- Mobile Menu -->
+                        <div id="mobileMenu"
+                            class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden">
+                            <!-- Close Button -->
+                            <button id="closeMenu"
+                                class="absolute top-4 right-6 text-3xl font-bold text-gray-600">&times;</button>
+                            <div class="flex flex-col gap-3 px-5">
+                                <a href="/imagitime" class="text-[#5C9991] text-lg">Home</a>
+                                <a href="/imagitime/Books.html" class="text-[#363636] text-lg">Books</a>
+                                <a href="/imagitime/about.html" class="text-[#363636] text-lg">About Us</a>
+                                <a href="/imagitime/contact.html" class="text-[#363636] text-lg">Faqs & Contact</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Desktop Menu -->
+                        <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                            <div class="flex space-x-2">
+                                <a href="/imagitime"
+                                    class="hover:underline underline-offset-[9px] underline text-[#5C9991] hover:text-[#5C9991] rounded-md px-3 py-2">
+                                    Home
+                                </a>
+                                <a href="/imagitime/Books.html"
+                                    class="text-[#363636] hover:underline underline-offset-[9px] underline-offset-4 hover:text-[#5C9991] rounded-md px-3 py-2">
+                                    Books
+                                </a>
+                                <a href="/imagitime/about.html"
+                                    class="text-[#363636] hover:underline underline-offset-[9px] underline-offset-4 hover:text-[#5C9991] rounded-md px-3 py-2">
+                                    About Us
+                                </a>
+                                <a href="/imagitime/contact.html"
+                                    class="text-[#363636] hover:underline underline-offset-[9px] underline-offset-4 hover:text-[#5C9991] rounded-md px-3 py-2">
+                                    Faqs & Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header menu section  -->

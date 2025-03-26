@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John's Story Book Preview</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+        <!-- start header menu section  -->
+        <div>
+          <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative">
+            <div class="mx-auto xl:px-0 px-5 max-w-[1190px]">
+              <div class="flex h-20 items-center justify-between">
+                <div
+                  class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between"
+                >
+                  <a class="flex flex-shrink-0 items-center mr-4" href="/">
+                    <img
+                      class="h-10 w-auto"
+                      src="assets/img/image 1.png"
+                      alt="React Jobs"
+                    />
+                  </a>
+                  <!-- Mobile Menu Icon -->
+                  <img
+                    src="assets/img/menu.png"
+                    class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                    id="menuToggle"
+                  />
+    
+                  <!-- Mobile Menu -->
+                  <div
+                    id="mobileMenu"
+                    class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden"
+                  >
+                    <!-- Close Button -->
+                    <button
+                      id="closeMenu"
+                      class="absolute top-4 right-6 text-3xl font-bold text-gray-600"
+                    >
+                      &times;
+                    </button>
+                    <div class="flex flex-col gap-3 px-5">
+                      <a href="/" class="text-[#5C9991] text-lg">Home</a>
+                      <a href="/Books.html" class="text-[#363636] text-lg">Books</a>
+                      <a href="/about.html" class="text-[#363636] text-lg"
+                        >About Us</a
+                      >
+                      <a href="/contact.html" class="text-[#363636] text-lg"
+                        >Faqs & Contact</a
+                      >
+                    </div>
+                  </div>
+    
+                  <!-- Desktop Menu -->
+                  <!-- Desktop Menu -->
+                  <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                    <div class="flex space-x-2">
+                      <a
+                        href="/index.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="index"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="/Books.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="books"
+                      >
+                        Books
+                      </a>
+                      <a
+                        href="/about.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="about"
+                      >
+                        About Us
+                      </a>
+                      <a
+                        href="/contact.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="contact"
+                      >
+                        FAQs & Contact
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- end header menu section  -->
+
+    <!-- header end  -->
+    <div
+      class="bg-white flex flex-col justify-center items-center mt-16 relative overflow-hidden"
+    >
+      <img
+        src="assets/img/cloud1.png"
+        class="lg:w-[197px] lg:h-[87px] md:w-[160px] md:h-[80px] absolute left-0 lg:top-[0px] md:top-[-83px] md:block hidden"
+      />
+      <img
+        src="assets/img/hel22.png"
+        class="lg:w-[335px] lg:h-[211px] w-[275px] h-[125px] top-[-110px] absolute right-[-150px] lg:top-[260px] rotate-[5deg] md:block hidden"
+      />
+      <img
+        src="assets/img/hel11.png"
+        class="lg:w-[335px] lg:h-[173px] absolute left-[-160px] lg:bottom-0 rotate-[358deg] w-[240px] h-[120px] bottom-[-128px] md:block hidden"
+      />
+      <div class="relative flex flex-col items-center justify-center w-full">
+        <div class="max-w-5xl w-full px-5">
+          <h1 class="text-center text-[42px] font-semibold mb-2 font-baloo">
+            John’s Book Preview
+          </h1>
+          <p
+            class="text-center text-[#363636] mb-20 font-poppin flex md:flex-row flex-col md:gap-5 gap-1 items-center justify-center"
+          >
+            <span>1. Pages get shown one below the other</span>
+            <span>2. Swipe and choose the option you like best</span>
+          </p>
+
+          <!-- Swiper Container -->
+          <div class="storybookspage relative w-full">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 11.svg"
+                    alt="Astronaut John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Astronaut John, floating through space, going on rockets,
+                      to a distant place.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 12.svg"
+                    alt="Chef John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:top-10 top-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      In the kitchen, John, a chef with flair, cooking up
+                      dishes, with love and care.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 13.svg"
+                    alt="Engineer John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 right-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[450px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Engineering marvels, with a mind so bright, John invents,
+                      bringing ideas to light.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Placed Below the Carousel) -->
+            <div
+              class="storybookpagination swiper-pagination mt-8 relative"
+            ></div>
+
+            <!-- Navigation Buttons -->
+            <div class="next-prev-button-am swiper-button-prev"></div>
+            <div class="next-prev-button-am swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second section  -->
+    <div
+      class="bg-white flex flex-col justify-center items-center mt-16 relative overflow-hidden"
+    >
+      <img
+        src="assets/img/Layer_1 (4).svg"
+        class="lg:w-[157px] lg:h-[100px] w-[275px] h-[125px] top-[-110px] absolute right-[-15px] lg:top-[180px] rotate-[5deg] md:block hidden"
+      />
+      <div class="relative flex flex-col items-center justify-center w-full">
+        <div class="max-w-5xl w-full px-5">
+          <!-- Swiper Container -->
+          <div class="storybookspage relative w-full">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 12.svg"
+                    alt="Engineer John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 right-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[450px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Engineering marvels, with a mind so bright, John invents,
+                      bringing ideas to light.
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 11.svg"
+                    alt="Astronaut John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Astronaut John, floating through space, going on rockets,
+                      to a distant place.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 13.svg"
+                    alt="Chef John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:top-10 top-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      In the kitchen, John, a chef with flair, cooking up
+                      dishes, with love and care.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Placed Below the Carousel) -->
+            <div
+              class="storybookpagination swiper-pagination mt-8 relative"
+            ></div>
+
+            <!-- Navigation Buttons -->
+            <div class="next-prev-button-am swiper-button-prev"></div>
+            <div class="next-prev-button-am swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third section  -->
+    <div
+      class="bg-white flex flex-col justify-center items-center mt-16 relative overflow-hidden"
+    >
+      <img
+        src="assets/img/Layer_1 (4).svg"
+        class="lg:w-[197px] lg:h-[87px] md:w-[160px] md:h-[80px] absolute left-[-60px] lg:top-[60px] md:top-[-83px] md:block hidden"
+      />
+      <div class="relative flex flex-col items-center justify-center w-full">
+        <div class="max-w-5xl w-full px-5">
+          <!-- Swiper Container -->
+          <div class="storybookspage relative w-full">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 13.svg"
+                    alt="Chef John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:top-10 top-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      In the kitchen, John, a chef with flair, cooking up
+                      dishes, with love and care.
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 12.svg"
+                    alt="Engineer John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 right-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[450px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Engineering marvels, with a mind so bright, John invents,
+                      bringing ideas to light.
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 11.svg"
+                    alt="Astronaut John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Astronaut John, floating through space, going on rockets,
+                      to a distant place.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Placed Below the Carousel) -->
+            <div
+              class="storybookpagination swiper-pagination mt-8 relative"
+            ></div>
+
+            <!-- Navigation Buttons -->
+            <div class="next-prev-button-am swiper-button-prev"></div>
+            <div class="next-prev-button-am swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fourth section  -->
+    <div
+      class="bg-white flex flex-col justify-center items-center mt-16 relative overflow-hidden"
+    >
+      <img
+        src="assets/img/hel22.png"
+        class="lg:w-[335px] lg:h-[211px] w-[275px] h-[125px] top-[0px] absolute right-[-150px] lg:top-[0px] rotate-[5deg] md:block hidden"
+      />
+      <img
+        src="assets/img/hel11.png"
+        class="lg:w-[335px] lg:h-[173px] absolute left-[-160px] lg:bottom-0 rotate-[358deg] w-[240px] h-[120px] bottom-[-128px] md:block hidden"
+      />
+      <div class="relative flex flex-col items-center justify-center w-full">
+        <div class="max-w-5xl w-full px-5">
+          <!-- Swiper Container -->
+          <div class="storybookspage relative w-full">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 14.svg"
+                    alt="Engineer John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 right-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[450px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Engineering marvels, with a mind so bright, John invents,
+                      bringing ideas to light.
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 11.svg"
+                    alt="Astronaut John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:bottom-10 bottom-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      Astronaut John, floating through space, going on rockets,
+                      to a distant place.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                  <img
+                    src="assets/img/image 12.svg"
+                    alt="Chef John"
+                    class="w-full rounded-lg"
+                  />
+                  <div
+                    class="absolute md:top-10 top-2 left-10 bg-white md:py-4 md:px-8 p-2 shadow-md rounded md:max-w-[387px] max-w-[200px] md:text-base text-xs"
+                  >
+                    <p class="text-black font-poppin">
+                      In the kitchen, John, a chef with flair, cooking up
+                      dishes, with love and care.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Placed Below the Carousel) -->
+            <div
+              class="storybookpagination swiper-pagination mt-8 relative"
+            ></div>
+
+            <!-- Navigation Buttons -->
+            <div class="next-prev-button-am swiper-button-prev"></div>
+            <div class="next-prev-button-am swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta_wrapper_ar md:mt-20 md:mb-32 my-10 flex justify-center">
+      <button
+        class="bg-[#FADA7A] text-[#363636] font-normal px-10 py-3 rounded-md md:text-xl text-base flex items-center gap-2 shadow-md font-poppin"
+      >
+        Save Preview & Show Price
+      </button>
+    </div>
+
+    <!--Footer Section start-->
+    <div
+      class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(to_bottom_right,_black_75%,_#324845_91%)] max-sm:py-[30px] max-sm:px-[20px] xl:px-0 md:px-[30px] px-5"
+    >
+      <div
+        class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+      >
+        <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+          <h1
+            class="text-[40px] max-sm:text-[35px] font-medium text-[#5C9991] font-baloo"
+          >
+            For EveryDay Magic
+          </h1>
+          <p
+            class="text-[16px] leading-[28px] text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px] font-poppin"
+          >
+            Turn ordinary moments into extraordinary stories! With AI-powered
+            storytelling, create magical keepsakes that bring joy every day.
+          </p>
+          <img
+            src="assets/img/image 1.svg"
+            class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+          />
+          <p
+            class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font-poppin"
+          >
+            © 2025 — Copyright All Rights reserved
+          </p>
+          <div
+            class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+          >
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Terms of Service
+            </p>
+            <p
+              class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+            >
+              Cookies
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end max-sm:items-center">
+          <h2
+            class="text-[19px] leading-[140%] text-white pt-[23px] font-poppin"
+          >
+            Imagitime
+          </h2>
+          <ul
+            class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] items-center pt-[24px] sm:items-end font-light font-poppin"
+          >
+            <li>
+              <a href="/" class="hover:text-white hover:underline"> Home</a>
+            </li>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>About Us</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Books</li>
+            </a>
+            <a href="/" class="hover:text-white hover:underline">
+              <li>Faqs</li>
+            </a>
+          </ul>
+          <h2
+            class="text-[20px] font-medium leading-[110%] text-white pt-[79px] max-sm:pt-[35px] font-poppin"
+          >
+            Contact Us
+          </h2>
+          <p
+            class="text-[14px] leading-[160%] text-[#F5F5F5] pt-[16px] font-poppin"
+          >
+            support@imagitime.com
+          </p>
+          <p class="text-[10px] leading-[160%] text-[#979797] font-poppin">
+            We typically reply within 24 hours.
+          </p>
+          <div class="flex flex-row flex-wrap gap-[9px] pt-[32px]">
+            <img src="assets/img/item.svg" class="w-[40px]" />
+            <img src="assets/img/item (1).svg" class="w-[40px]" />
+            <img src="assets/img/item (2).svg" class="w-[40px]" />
+            <img src="assets/img/col.svg" class="w-[40px]" />
+            <img src="assets/img/col (1).svg" class="w-[40px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Section end-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

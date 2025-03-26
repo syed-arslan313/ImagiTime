@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+        <!-- start header menu section  -->
+        <div>
+          <nav class="bg-white shadow-[0_2px_16px_rgba(0,0,0,0.25)] relative">
+            <div class="mx-auto xl:px-0 px-5 max-w-[1190px]">
+              <div class="flex h-20 items-center justify-between">
+                <div
+                  class="flex flex-1 items-center justify-center md:items-stretch md:justify-start justify-between"
+                >
+                  <a class="flex flex-shrink-0 items-center mr-4" href="/">
+                    <img
+                      class="h-10 w-auto"
+                      src="assets/img/image 1.png"
+                      alt="React Jobs"
+                    />
+                  </a>
+                  <!-- Mobile Menu Icon -->
+                  <img
+                    src="assets/img/menu.png"
+                    class="w-[50px] h-[46px] hidden max-sm:block cursor-pointer"
+                    id="menuToggle"
+                  />
+    
+                  <!-- Mobile Menu -->
+                  <div
+                    id="mobileMenu"
+                    class="fixed z-[9] top-0 left-0 w-full h-screen bg-white flex flex-col items-center space-y-6 pt-16 transform -translate-y-full transition-transform duration-300 ease-in-out max-sm:block hidden"
+                  >
+                    <!-- Close Button -->
+                    <button
+                      id="closeMenu"
+                      class="absolute top-4 right-6 text-3xl font-bold text-gray-600"
+                    >
+                      &times;
+                    </button>
+                    <div class="flex flex-col gap-3 px-5">
+                      <a href="/" class="text-[#5C9991] text-lg">Home</a>
+                      <a href="/Books.html" class="text-[#363636] text-lg">Books</a>
+                      <a href="/about.html" class="text-[#363636] text-lg"
+                        >About Us</a
+                      >
+                      <a href="/contact.html" class="text-[#363636] text-lg"
+                        >Faqs & Contact</a
+                      >
+                    </div>
+                  </div>
+    
+                  <!-- Desktop Menu -->
+                  <!-- Desktop Menu -->
+                  <div class="md:ml-auto max-sm:hidden font-poppin text-[18px]">
+                    <div class="flex space-x-2">
+                      <a
+                        href="/index.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="index"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="/Books.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="books"
+                      >
+                        Books
+                      </a>
+                      <a
+                        href="/about.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="about"
+                      >
+                        About Us
+                      </a>
+                      <a
+                        href="/contact.html"
+                        class="nav-link underline-offset-[9px] px-3 py-2 rounded-md"
+                        data-link="contact"
+                      >
+                        FAQs & Contact
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- end header menu section  -->
+    <!--Hero Section start-->
+
+    <div
+      class="flex flex-col items-center lg:pt-[85px] pt-[120px] lg-pb-[116px] pb-[140px] bg-[#EAFBF9] relative max-sm:px-[20px] overflow-hidden"
+    >
+    <img
+    src="assets/img/hel1.png"
+    class="md:w-[506px] w-[320px] xl:h-[173px] md:h-[120px] top-[20px] max-sm:top-[10px]  absolute md:left-[-250px] left-[-100px]  rotate-[354deg]"
+  />
+  <img
+    src="assets/img/hel22.png"
+    class="lg:w-[396px] w-[270px] h-[150px] lg:h-[188px] absolute right-[-43px] max-sm:bottom-[-10px] rotate-[5deg] bottom-0">
+
+
+      <div class="flex w-full items-center flex-col relative">
+        
+        <div class="flex flex-col items-center max-sm:w-full">
+          <h1 class="text-[49px] font-semibold font-baloo">Last Step</h1>
+          <p class="text-[16px] leading-[29px] text-[#363636] font-poppin pt-[13px]">
+            Upload 2 to 4 Photos of John
+          </p>
+
+          <ul
+            class="flex flex-row max-sm:flex-col max-sm:items-center max-sm:pt-[35px] md:gap-[40px] gap-2 text-[14px] leading-[29px] text-black font-poppin list-disc marker:text-[#5C9991] pt-[69px]"
+          >
+            <li>Solo Photos Only</li>
+            <li>Front Facing & Smiling</li>
+            <li>No Pacifier, No Cap</li>
+          </ul>
+
+          <form
+            class="flex flex-col w-full md:w-[682px] mt-[32px] pt-[47px] pb-[53px] bg-[#FBFBFB] border-dotted rounded-[8px] border-[2px] border-black justify-center items-center relative"
+          >
+            <input
+              type="file"
+              class="w-full h-[219px] text-[#FBFBFB] absolute opacity-0"
+            />
+
+            <img src="assets/img/upload.png" class="w-[55px] h-[55px]" />
+            <p class="text-[16px] leading-[29px] font-poppin text-[#363636] pt-[26px]">
+              Drop your file(s) here, or
+              <span class="text-[#5C9991]">Browse</span>
+            </p>
+            <p class="text-[12px] leading-[22px] text-[#989191] font-poppin pt-[15px]">
+              Supports: pdf, Max file size 90MB
+            </p>
+          </form>
+
+          <ul
+            class="flex w-full flex-row justify-between text-[12px] leading-[29px] font-poppin text-[#5C9991] pt-[20px] italic max-sm:flex-col max-sm:items-center"
+          >
+            <li>We follow strict data privacy standards</li>
+            <li>Minimum 2 to 4 photos are required.*</li>
+          </ul>
+          <a
+            href=""
+            class="flex flex-col items-center justify-center bg-[#FADA7A] py-[15px] px-[21px] rounded-[8px] mt-[43px]"
+          >
+            <p class="text-[18px] leading-[20px] font-poppin text-black">
+              Show Book Preview
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Hero Section End-->
+
+     <!--Footer Section start-->
+     <div
+     class="flex w-full items-center justify-centers sm:h-[583px] bg-[linear-gradient(to_bottom_right,_black_75%,_#324845_91%)] max-sm:py-[30px] max-sm:px-[20px] xl:px-0 md:px-[30px] px-5"
+   >
+     <div
+       class="flex flex-row max-sm:flex-col max-sm:items-center sm:w-[1193px] justify-between mx-auto max-sm:gap-[30px]"
+     >
+       <div class="flex flex-col max-sm:items-center lg:w-[431px]">
+         <h1
+           class="text-[40px] max-sm:text-[35px] font-medium text-[#5C9991] font-baloo"
+         >
+           For EveryDay Magic
+         </h1>
+         <p
+           class="text-[16px] leading-[28px] text-[#F5F5F5] pt-[8px] max-sm:text-center md:w-[360px] font-poppin"
+         >
+           Turn ordinary moments into extraordinary stories! With AI-powered
+           storytelling, create magical keepsakes that bring joy every day.
+         </p>
+         <img
+           src="assets/img/image 1.svg"
+           class="w-[173px] h-[63px] mt-[117px] max-sm:mt-[60px]"
+         />
+         <p
+           class="text-[12px] leading-[140%] text-[#F5F5F5] pt-[11px] font-poppin"
+         >
+           © 2025 — Copyright All Rights reserved
+         </p>
+         <div
+           class="flex flex row pt-[55px] sm:w-full max-sm:gap-[20px] md:gap-[20px] lg:justify-between"
+         >
+           <p
+             class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+           >
+             Privacy Policy
+           </p>
+           <p
+             class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+           >
+             Terms of Service
+           </p>
+           <p
+             class="text-[17px] max-sm:text-[15px] leading-[140%] text-[#5C9991]"
+           >
+             Cookies
+           </p>
+         </div>
+       </div>
+       <div class="flex flex-col items-end max-sm:items-center">
+         <h2
+           class="text-[19px] leading-[140%] text-white pt-[23px] font-poppin"
+         >
+           Imagitime
+         </h2>
+         <ul
+           class="flex flex-col gap-[12px] text-[19px] leading-[140%] text-[#F5F5F5] items-center pt-[24px] sm:items-end font-light font-poppin"
+         >
+           <li>
+             <a href="/" class="hover:text-white hover:underline"> Home</a>
+           </li>
+           <a href="/" class="hover:text-white hover:underline">
+             <li>About Us</li>
+           </a>
+           <a href="/" class="hover:text-white hover:underline">
+             <li>Books</li>
+           </a>
+           <a href="/" class="hover:text-white hover:underline">
+             <li>Faqs</li>
+           </a>
+         </ul>
+         <h2
+           class="text-[20px] font-medium leading-[110%] text-white pt-[79px] max-sm:pt-[35px] font-poppin"
+         >
+           Contact Us
+         </h2>
+         <p
+           class="text-[14px] leading-[160%] text-[#F5F5F5] pt-[16px] font-poppin"
+         >
+           support@imagitime.com
+         </p>
+         <p class="text-[10px] leading-[160%] text-[#979797] font-poppin">
+           We typically reply within 24 hours.
+         </p>
+         <div class="flex flex-row flex-wrap gap-[9px] pt-[32px]">
+           <img src="assets/img/item.svg" class="w-[40px]" />
+           <img src="assets/img/item (1).svg" class="w-[40px]" />
+           <img src="assets/img/item (2).svg" class="w-[40px]" />
+           <img src="assets/img/col.svg" class="w-[40px]" />
+           <img src="assets/img/col (1).svg" class="w-[40px]" />
+         </div>
+       </div>
+     </div>
+   </div>
+   <!--Footer Section end-->
+ </body>
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="assets/script.js"></script>
+</html>
